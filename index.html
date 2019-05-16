@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Fund</title>
+   <link rel = "stylesheet" type = "text/css" href ="assets/styles/projectfund.css"/>
+   <link rel = "stylesheet" type = "text/css" href ="assets/styles/reset.css"/>
+   <script  src="assets/js/fundproject.js"></script>
+    </head>
+    <body>
+     
+        <div class="fundstatus">
+               <div class="fundstatus__message">
+                  <p class="fundstatus__parag fundstatus__parag--clrwhite ">$<span id="reqamt">250</span> still need for this project</p><span class="fundstatus__arrow-down"></span>
+               </div>
+               <div class="fundstatus__content">
+                      <div class="fundstatus__progressbar">
+                        <div  class="fundstatus__progressbar-colororange" id="changrclr">
+                        </div>
+                      </div>
+                         <div class="fundstatus__content-2">
+                              <p class="fundstatus__para"><span class="fundstatus__dyslft">Only 3 days left</span> to fund this project.</p>
+                                <p class="fundstatus__para">Join the <span class="fundstatus__count--colorgrey" >42</span> other donors who 
+                                    have already supported this project. Every dollar helps.</p>
+                                <input class="fundstatus__input" id="dollarip"  type="number" title="Enter the Amount" min="1" max="250" oninput="fundamt()"  required/>
+                                <input  class="fundstatus__btngvn" type="button"  title="click to transfer Fund" name="givenow" value="Give Now" onclick="barclr_chng()" />
+                                <!-- <span class=" fundstatus__btnmsg">Please Enter the Amount </span> -->
+                                <!-- <button class="fundstatus__btngvn">Give Now</button> -->
+                                <a class="fundstatus__link "  id="myBtn" href="#popup1" title="Why given $50">Why given $<span id="why">50</span>?</a>
+                        </div>
+              </div>
+                   <input type="button" class="fundstatus__btns mrg--rgt" title="Save for later" name="Save for later" value="Save for later&amp">
+                   <input type="button" class="fundstatus__btns"  title="Tell your friends" name="Tell your friends" value="Tell your friends">
+
+           <!-- <button class="fundstatus__btns mrg--rgt">Save for later</button> -->
+           <!-- <button class="fundstatus__btns">Tell your friends</button> -->
+        </div>
+                    <!-- *************** Popup Box************** -->
+                    <div id="popup1" class="overlay">
+                        <div class="fundstatus__popup">
+                            <h2>Fund Contribution is for </h2>
+                               <a class="close" href="#">&times;</a>
+                                 <div class="fundstatus__content">
+                                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                                 </div>
+                        </div>
+                    </div>
+    </body>
+</html>
